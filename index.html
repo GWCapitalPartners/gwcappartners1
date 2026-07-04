@@ -1,523 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>GW Capital Partners LLC | Trading Cards, Collectibles & Grading</title>
-  <meta name="description" content="GW Capital Partners LLC specializes in trading card investments, Pokémon cards, sports cards, graded collectibles, sealed products, and collectible portfolio building in Bradenton, Florida.">
-  <meta name="keywords" content="GW Capital Partners, trading cards, Pokémon cards, sports cards, graded cards, collectibles, sealed products, card investing, Bradenton Florida, Sarasota Florida">
-  <meta name="author" content="GW Capital Partners LLC">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.gwcappartners.com/">
-
-  <meta property="og:title" content="GW Capital Partners LLC">
-  <meta property="og:description" content="Strategic investments in trading cards, sealed products, graded collectibles, and alternative collectible assets.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.gwcappartners.com/">
-  <meta property="og:image" content="gw-capital-partners-logo.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GW Capital Partners LLC">
-  <meta name="twitter:description" content="Trading card investments, collectible grading, sealed product investing, and portfolio building.">
-  <meta name="twitter:image" content="gw-capital-partners-logo.png">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #080808;
-      color: #f4f4f4;
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    header {
-      background: #050505;
-      border-bottom: 1px solid #222;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .nav {
-      max-width: 1150px;
-      margin: auto;
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .brand {
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      color: #d71920;
-      white-space: nowrap;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .nav-links a {
-      font-size: 14px;
-      color: #ddd;
-      transition: color .2s ease;
-    }
-
-    .nav-links a:hover {
-      color: #d71920;
-    }
-
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(rgba(0,0,0,.84), rgba(0,0,0,.94)),
-        radial-gradient(circle at center, #252525, #050505);
-      padding: 80px 24px;
-    }
-
-    .hero-inner {
-      max-width: 1150px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .logo {
-      width: 100%;
-      max-width: 520px;
-      display: block;
-      margin: auto;
-      border-radius: 18px;
-      box-shadow: 0 25px 70px rgba(0,0,0,.65);
-    }
-
-    .eyebrow {
-      color: #d71920;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 2px;
-      font-size: 14px;
-      margin-bottom: 14px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.05;
-      margin-bottom: 20px;
-    }
-
-    .silver {
-      color: #d8d8d8;
-    }
-
-    .red {
-      color: #d71920;
-    }
-
-    .hero p {
-      font-size: 19px;
-      color: #cccccc;
-      max-width: 590px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      padding: 14px 24px;
-      border-radius: 4px;
-      font-weight: 700;
-      display: inline-block;
-      margin-right: 12px;
-      margin-bottom: 12px;
-      transition: .2s ease;
-    }
-
-    .btn-primary {
-      background: #d71920;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #a90f15;
-    }
-
-    .btn-secondary {
-      border: 1px solid #aaa;
-      color: #eee;
-    }
-
-    .btn-secondary:hover {
-      border-color: #d71920;
-      color: #d71920;
-    }
-
-    section {
-      padding: 80px 24px;
-    }
-
-    .container {
-      max-width: 1150px;
-      margin: auto;
-    }
-
-    .section-title {
-      font-size: clamp(30px, 4vw, 42px);
-      margin-bottom: 18px;
-      line-height: 1.15;
-    }
-
-    .section-subtitle {
-      color: #bfbfbf;
-      max-width: 760px;
-      margin-bottom: 40px;
-      font-size: 18px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .card {
-      background: linear-gradient(145deg, #151515, #0d0d0d);
-      border: 1px solid #292929;
-      padding: 30px;
-      border-radius: 14px;
-      box-shadow: 0 16px 35px rgba(0,0,0,.25);
-    }
-
-    .card h3 {
-      color: #f1f1f1;
-      margin-bottom: 12px;
-      font-size: 22px;
-    }
-
-    .card p {
-      color: #bdbdbd;
-    }
-
-    .light {
-      background: #f5f5f5;
-      color: #111;
-    }
-
-    .light .section-subtitle,
-    .light p {
-      color: #444;
-    }
-
-    .light .card {
-      background: white;
-      border: 1px solid #ddd;
-      box-shadow: 0 12px 35px rgba(0,0,0,.08);
-    }
-
-    .light .card h3 {
-      color: #111;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 46px;
-      align-items: center;
-    }
-
-    .list {
-      list-style: none;
-      margin-top: 20px;
-    }
-
-    .list li {
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255,255,255,.12);
-      color: #d0d0d0;
-    }
-
-    .highlight-box {
-      background: #111;
-      border-left: 5px solid #d71920;
-      padding: 28px;
-      border-radius: 10px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .gallery-item {
-      background: #151515;
-      border: 1px solid #292929;
-      border-radius: 14px;
-      padding: 28px;
-      text-align: center;
-    }
-
-    .gallery-item span {
-      font-size: 34px;
-      display: block;
-      margin-bottom: 12px;
-    }
-
-    .contact {
-      text-align: center;
-      background:
-        linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.95)),
-        radial-gradient(circle at center, #2a2a2a, #050505);
-    }
-
-    .contact-card {
-      max-width: 760px;
-      margin: 35px auto 0;
-      background: #111;
-      border: 1px solid #2a2a2a;
-      border-radius: 14px;
-      padding: 35px;
-    }
-
-    .contact-card a {
-      color: #d8d8d8;
-      font-weight: 700;
-    }
-
-    .contact-card a:hover {
-      color: #d71920;
-    }
-
-    footer {
-      background: #000;
-      border-top: 1px solid #222;
-      text-align: center;
-      padding: 28px 20px;
-      color: #999;
-      font-size: 14px;
-    }
-
-    @media (max-width: 900px) {
-      .hero-inner,
-      .split {
-        grid-template-columns: 1fr;
-      }
-
-      .cards,
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .nav {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero {
-        text-align: center;
-        padding: 55px 20px;
-      }
-
-      .hero p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .btn {
-        width: 100%;
-        max-width: 280px;
-        margin-right: 0;
-      }
-
-      section {
-        padding: 60px 20px;
-      }
-
-      .logo {
-        max-width: 360px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .brand {
-        font-size: 17px;
-      }
-
-      .nav-links {
-        gap: 12px;
-      }
-
-      .nav-links a {
-        font-size: 13px;
-      }
-
-      .hero p,
-      .section-subtitle {
-        font-size: 16px;
-      }
-
-      .card,
-      .contact-card,
-      .highlight-box {
-        padding: 24px;
-      }
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "GW Capital Partners LLC",
-    "description": "Trading card investments, collectible grading, sealed product investing, and portfolio building.",
-    "email": "jeff@gwcappartners.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bradenton",
-      "addressRegion": "FL",
-      "addressCountry": "US"
-    },
-    "areaServed": ["Bradenton FL", "Sarasota FL", "United States"],
-    "url": "https://www.gwcappartners.com/"
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GW Capital Partners LLC | Trading Cards & Collectibles</title>
+<meta name="description" content="GW Capital Partners LLC specializes in sports cards, emerging TCGs, sealed products, graded cards, and collectibles in Bradenton, Florida.">
+<meta name="keywords" content="GW Capital Partners, trading cards, sports cards, TCG, sealed products, graded cards, collectibles, Bradenton, Sarasota">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gwcappartners.com/">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#f4f4f4;line-height:1.6}
+a{color:inherit;text-decoration:none}
+header{background:#050505;border-bottom:1px solid #222;position:sticky;top:0;z-index:100}
+.nav{max-width:1180px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font-size:20px;font-weight:700;letter-spacing:1px;color:#d71920;white-space:nowrap}
+.nav-links{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}
+.nav-links a{font-size:14px;color:#ddd}.nav-links a:hover{color:#d71920}
+.internal-link{border:1px solid #d71920;padding:8px 12px;border-radius:6px}
+.hero{min-height:88vh;display:flex;align-items:center;background:linear-gradient(rgba(0,0,0,.84),rgba(0,0,0,.94)),radial-gradient(circle,#252525,#050505);padding:80px 24px}
+.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.logo{width:100%;max-width:520px;display:block;margin:auto;border-radius:18px;box-shadow:0 25px 70px rgba(0,0,0,.65)}
+.eyebrow{color:#d71920;text-transform:uppercase;font-weight:700;letter-spacing:2px;font-size:14px;margin-bottom:14px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin-bottom:20px}.silver{color:#d8d8d8}.red{color:#d71920}
+.hero p{font-size:19px;color:#ccc;max-width:590px;margin-bottom:30px}
+.btn{padding:14px 24px;border-radius:5px;font-weight:700;display:inline-block;margin-right:12px;margin-bottom:12px}
+.btn-primary{background:#d71920;color:white}.btn-secondary{border:1px solid #aaa;color:#eee}
+section{padding:80px 24px}.container{max-width:1180px;margin:auto}
+.section-title{font-size:clamp(30px,4vw,42px);margin-bottom:18px;line-height:1.15}
+.section-subtitle{color:#bfbfbf;max-width:780px;margin-bottom:40px;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:linear-gradient(145deg,#151515,#0d0d0d);border:1px solid #292929;padding:30px;border-radius:14px;box-shadow:0 16px 35px rgba(0,0,0,.25)}
+.card h3{color:#f1f1f1;margin-bottom:12px;font-size:22px}.card p{color:#bdbdbd}
+.light{background:#f5f5f5;color:#111}.light .section-subtitle,.light p{color:#444}.light .card{background:#fff;border:1px solid #ddd;box-shadow:0 12px 35px rgba(0,0,0,.08)}.light .card h3{color:#111}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.highlight-box{background:#111;border-left:5px solid #d71920;padding:28px;border-radius:10px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.gallery-item{background:#151515;border:1px solid #292929;border-radius:14px;padding:28px;text-align:center}.gallery-item span{font-size:34px;display:block;margin-bottom:12px}
+.contact{text-align:center;background:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.95)),radial-gradient(circle,#2a2a2a,#050505)}
+.contact-card{max-width:760px;margin:35px auto 0;background:#111;border:1px solid #2a2a2a;border-radius:14px;padding:35px}.contact-card a{color:#d8d8d8;font-weight:700}.contact-card a:hover{color:#d71920}
+footer{background:#000;border-top:1px solid #222;text-align:center;padding:28px 20px;color:#999;font-size:14px}
+@media(max-width:900px){.hero-inner,.split{grid-template-columns:1fr}.cards,.gallery{grid-template-columns:1fr}.nav{flex-direction:column;text-align:center}.hero{text-align:center;padding:55px 20px}.hero p{margin:auto auto 30px}.btn{width:100%;max-width:290px;margin-right:0}section{padding:60px 20px}.logo{max-width:360px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"GW Capital Partners LLC","description":"Trading card and collectibles business specializing in sports cards, emerging TCGs, sealed products, graded cards, and collectibles.","email":"jeff@gwcappartners.com","address":{"@type":"PostalAddress","addressLocality":"Bradenton","addressRegion":"FL","addressCountry":"US"},"url":"https://gwcappartners.com/"}
+</script>
 </head>
-
 <body>
-<header>
-  <div class="nav">
-    <div class="brand">GW CAPITAL PARTNERS</div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#inventory">Inventory</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
+<header><div class="nav"><div class="brand">GW CAPITAL PARTNERS</div><nav class="nav-links"><a href="#about">About</a><a href="#services">Services</a><a href="#inventory-focus">Inventory</a><a href="#contact">Contact</a><a class="internal-link" href="inventory/">Internal Inventory</a></nav></div></header>
 <main>
-<section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="eyebrow">Trading Cards • Collectibles • Alternative Assets</div>
-      <h1><span class="silver">GW Capital</span><br><span class="red">Partners LLC</span></h1>
-      <p>Strategic investments in premium trading cards, sealed products, graded collectibles, and long-term collectible assets.</p>
-      <a class="btn btn-primary" href="#contact">Contact Us</a>
-      <a class="btn btn-secondary" href="#services">View Services</a>
-    </div>
-    <div>
-      <img class="logo" src="gw-capital-partners-logo.png" alt="GW Capital Partners LLC red and silver logo">
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container split">
-    <div>
-      <div class="eyebrow">About Us</div>
-      <h2 class="section-title">Investing in Collectibles. Building Value.</h2>
-      <p class="section-subtitle">GW Capital Partners LLC was founded by Jeffrey T. Whitcomb Jr. and Joseph V. Galto III with a shared passion for collectibles, investing, and entrepreneurship.</p>
-      <p>We believe collectibles are more than hobbies. They are alternative assets with long-term value potential. Our approach combines market knowledge, disciplined buying, grading strategy, and professional resale practices.</p>
-    </div>
-    <div class="highlight-box">
-      <h3>Our Mission</h3>
-      <p>To create long-term value through strategic collectible investments while maintaining integrity, transparency, and professionalism.</p>
-      <br>
-      <h3>Our Focus</h3>
-      <p>Acquire. Grade. Hold. Grow.</p>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="light">
-  <div class="container">
-    <div class="eyebrow">Services</div>
-    <h2 class="section-title">What We Do</h2>
-    <p class="section-subtitle">We focus on collectible assets with strong demand, clear market data, and long-term growth potential.</p>
-    <div class="cards">
-      <div class="card"><h3>Trading Card Investments</h3><p>Strategic acquisition of Pokémon, sports cards, graded cards, and specialty collectibles.</p></div>
-      <div class="card"><h3>Professional Grading</h3><p>Submission and management of collectible grading services to improve authenticity and resale value.</p></div>
-      <div class="card"><h3>Sealed Product Investing</h3><p>Investment in sealed products, limited releases, booster boxes, and collectible inventory.</p></div>
-      <div class="card"><h3>Collection Evaluations</h3><p>Fair evaluations for collectors looking to sell individual cards, sealed products, or full collections.</p></div>
-      <div class="card"><h3>Portfolio Building</h3><p>Helping collectors and investors build diversified collectible portfolios focused on quality.</p></div>
-      <div class="card"><h3>Resale Strategy</h3><p>Professional buying, holding, grading, and resale strategy through trusted sales channels.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="inventory">
-  <div class="container">
-    <div class="eyebrow">Inventory Focus</div>
-    <h2 class="section-title">We Buy & Invest In</h2>
-    <p class="section-subtitle">We evaluate opportunities based on condition, market demand, rarity, grading potential, and long-term collectible value.</p>
-    <div class="gallery">
-      <div class="gallery-item"><span>🃏</span><h3>Pokémon Cards</h3></div>
-      <div class="gallery-item"><span>🏆</span><h3>Sports Cards</h3></div>
-      <div class="gallery-item"><span>💎</span><h3>Graded Cards</h3></div>
-      <div class="gallery-item"><span>📦</span><h3>Sealed Products</h3></div>
-    </div>
-  </div>
-</section>
-
-<section class="light">
-  <div class="container">
-    <div class="eyebrow">Why Choose Us</div>
-    <h2 class="section-title">Professional, Transparent, Collector-Focused</h2>
-    <div class="cards">
-      <div class="card"><h3>Industry Knowledge</h3><p>We stay current on pricing, demand, grading trends, and collectible market movement.</p></div>
-      <div class="card"><h3>Long-Term Approach</h3><p>We focus on sustainable value creation rather than short-term speculation.</p></div>
-      <div class="card"><h3>Clear Communication</h3><p>We believe in transparent offers, professional records, and strong business practices.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="eyebrow">Contact</div>
-    <h2 class="section-title">Contact GW Capital Partners</h2>
-    <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">Interested in buying, selling, grading, or discussing collectible investment opportunities?</p>
-    <div class="contact-card">
-      <p><strong>Email:</strong> <a href="mailto:jeff@gwcappartners.com">jeff@gwcappartners.com</a></p>
-      <p><strong>Location:</strong> Bradenton, Florida</p>
-      <p><strong>Business Hours:</strong> Monday – Friday, 9:00 AM – 6:00 PM EST</p>
-    </div>
-  </div>
-</section>
+<section class="hero"><div class="hero-inner"><div><div class="eyebrow">Trading Cards • Sports Cards • Emerging TCGs</div><h1><span class="silver">GW Capital</span><br><span class="red">Partners LLC</span></h1><p>Strategic buying, selling, and investing in sports cards, emerging trading card games, sealed products, graded cards, and collectible assets.</p><a class="btn btn-primary" href="#contact">Contact Us</a><a class="btn btn-secondary" href="#services">View Services</a></div><div><img class="logo" src="gw-capital-partners-logo.png" alt="GW Capital Partners LLC logo"></div></div></section>
+<section id="about"><div class="container split"><div><div class="eyebrow">About Us</div><h2 class="section-title">Collect. Invest. Grow.</h2><p class="section-subtitle">GW Capital Partners LLC is a Florida-based trading card and collectibles business built by collectors, investors, and entrepreneurs.</p><p>We focus on sports cards, emerging TCGs, graded cards, sealed product, and collectible opportunities with strong long-term potential.</p></div><div class="highlight-box"><h3>Our Mission</h3><p>To provide collectors and investors with authentic trading cards and collectibles while delivering professional service, transparent pricing, and a trusted buying and selling experience.</p><br><h3>Our Focus</h3><p>Buy • Sell • Trade • Grade • Hold • Grow</p></div></div></section>
+<section id="services" class="light"><div class="container"><div class="eyebrow">Services</div><h2 class="section-title">What We Do</h2><p class="section-subtitle">We combine collector knowledge with disciplined inventory, pricing, and resale systems.</p><div class="cards"><div class="card"><h3>Sports Cards</h3><p>Modern, vintage, raw, graded, and sealed sports card products.</p></div><div class="card"><h3>Emerging TCGs</h3><p>Supporting growing trading card games and sealed product lines with strong community demand.</p></div><div class="card"><h3>Sealed Product</h3><p>Booster boxes, cases, ETBs, collection boxes, and limited-release collectible products.</p></div><div class="card"><h3>Graded Cards</h3><p>Premium graded inventory and grading workflow management.</p></div><div class="card"><h3>Collection Buying</h3><p>Fair evaluations for singles, sealed product, or full collections.</p></div><div class="card"><h3>Online Sales</h3><p>eBay, direct customer sales, and future storefront operations.</p></div></div></div></section>
+<section id="inventory-focus"><div class="container"><div class="eyebrow">Inventory Focus</div><h2 class="section-title">We Buy & Invest In</h2><p class="section-subtitle">We evaluate opportunities based on authenticity, condition, rarity, market demand, grading potential, and long-term value.</p><div class="gallery"><div class="gallery-item"><span>🏆</span><h3>Sports Cards</h3></div><div class="gallery-item"><span>🃏</span><h3>Emerging TCGs</h3></div><div class="gallery-item"><span>💎</span><h3>Graded Cards</h3></div><div class="gallery-item"><span>📦</span><h3>Sealed Products</h3></div></div></div></section>
+<section class="light"><div class="container"><div class="eyebrow">Why Choose Us</div><h2 class="section-title">Professional, Transparent, Collector-Focused</h2><div class="cards"><div class="card"><h3>Authentic Products</h3><p>Legitimate products, clear condition standards, and accurate descriptions.</p></div><div class="card"><h3>Long-Term Approach</h3><p>Sustainable growth, repeat customers, and a trusted local brand.</p></div><div class="card"><h3>Organized Operations</h3><p>Inventory, sales, grading, and partner money tracked with systems built for growth.</p></div></div></div></section>
+<section id="contact" class="contact"><div class="container"><div class="eyebrow">Contact</div><h2 class="section-title">Contact GW Capital Partners</h2><p class="section-subtitle" style="margin-left:auto;margin-right:auto;">Interested in buying, selling, grading, or discussing collectible investment opportunities?</p><div class="contact-card"><p><strong>Email:</strong> <a href="mailto:jeff@gwcappartners.com">jeff@gwcappartners.com</a></p><p><strong>Website:</strong> gwcappartners.com</p><p><strong>Location:</strong> Bradenton, Florida</p></div></div></section>
 </main>
-
-<footer>
-  <p><strong style="color:#d71920;">GW Capital Partners LLC</strong></p>
-  <p>Strategic Investments in Trading Cards & Collectibles</p>
-  <p>© 2026 GW Capital Partners LLC. All Rights Reserved.</p>
-</footer>
+<footer><p><strong style="color:#d71920;">GW Capital Partners LLC</strong></p><p>Trading Cards • Sports Cards • Emerging TCGs • Collectibles</p><p>© 2026 GW Capital Partners LLC. All Rights Reserved.</p></footer>
 </body>
 </html>
